@@ -29,7 +29,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"&example-lib@workspace:packages/example-lib":
+"&example-lib@workspace:, &example-lib@workspace:packages/example-lib":
   version: 0.0.0-use.local
   resolution: "&example-lib@workspace:packages/example-lib"
   dependencies:
@@ -46,6 +46,7 @@ __metadata:
   resolution: "&example-spa@workspace:packages/example-spa"
   dependencies:
     "&eslint-config": "workspace:"
+    "&example-lib": "workspace:"
     "@rsbuild/core": "catalog:"
     "@rsbuild/plugin-react": "catalog:"
     "@rsbuild/plugin-source-build": "catalog:"

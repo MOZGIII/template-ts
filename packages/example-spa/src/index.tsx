@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import helloWorld from "&example-lib";
 
 const rootEl = document.getElementById("root");
 if (rootEl === null) {
@@ -9,6 +10,6 @@ if (rootEl === null) {
 const root = ReactDOM.createRoot(rootEl);
 root.render(
   <React.StrictMode>
-    <div>Hello world</div>
+    <div>{helloWorld}</div>
   </React.StrictMode>,
 );
