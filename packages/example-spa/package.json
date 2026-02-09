@@ -1,0 +1,31 @@
+{
+  "name": "&example-spa",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "rsbuild build",
+    "dev": "rsbuild dev --open",
+    "example-spa:dev": "yarn dev",
+    "preview": "rsbuild preview",
+    "test": "rstest",
+    "eslint:fix": "eslint . --fix",
+    "eslint:check": "eslint .",
+    "tsc:check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "catalog:",
+    "react-dom": "catalog:"
+  },
+  "devDependencies": {
+    "&eslint-config": "workspace:",
+    "@rsbuild/core": "catalog:",
+    "@rsbuild/plugin-react": "catalog:",
+    "@rsbuild/plugin-source-build": "catalog:",
+    "@rstest/core": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "eslint": "catalog:",
+    "typescript": "catalog:"
+  }
+}
