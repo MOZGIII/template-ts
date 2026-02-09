@@ -11,6 +11,9 @@
     "eslint:check": "eslint .",
     "tsc:check": "tsc --build --noEmit"
   },
+  "dependencies": {
+    "&example-lib": "workspace:"
+  },
   "devDependencies": {
     "&eslint-config": "workspace:",
     "eslint": "catalog:",

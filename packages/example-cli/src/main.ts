@@ -1,1 +1,3 @@
-console.log("Hello world");
+import helloWorld from "&example-lib";
+
+console.log(helloWorld);

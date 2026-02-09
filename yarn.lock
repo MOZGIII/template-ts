@@ -24,6 +24,7 @@ __metadata:
   resolution: "&example-cli@workspace:packages/example-cli"
   dependencies:
     "&eslint-config": "workspace:"
+    "&example-lib": "workspace:"
     eslint: "catalog:"
     typescript: "catalog:"
   languageName: unknown
