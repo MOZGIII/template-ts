@@ -1,0 +1,32 @@
+{
+  "name": "&example-lib",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "rslib build",
+    "test": "rstest",
+    "eslint:fix": "eslint . --fix",
+    "eslint:check": "eslint .",
+    "tsc:check": "tsc --build --noEmit"
+  },
+  "devDependencies": {
+    "&eslint-config": "workspace:",
+    "@rslib/core": "catalog:",
+    "@rstest/core": "catalog:",
+    "eslint": "catalog:",
+    "typescript": "catalog:"
+  }
+}

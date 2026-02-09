@@ -29,6 +29,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"&example-lib@workspace:packages/example-lib":
+  version: 0.0.0-use.local
+  resolution: "&example-lib@workspace:packages/example-lib"
+  dependencies:
+    "&eslint-config": "workspace:"
+    "@rslib/core": "catalog:"
+    "@rstest/core": "catalog:"
+    eslint: "catalog:"
+    typescript: "catalog:"
+  languageName: unknown
+  linkType: soft
+
 "&example-spa@workspace:packages/example-spa":
   version: 0.0.0-use.local
   resolution: "&example-spa@workspace:packages/example-spa"
@@ -46,6 +58,105 @@ __metadata:
     typescript: "catalog:"
   languageName: unknown
   linkType: soft
+
+"@ast-grep/napi-darwin-arm64@npm:0.37.0":
+  version: 0.37.0
+  resolution: "@ast-grep/napi-darwin-arm64@npm:0.37.0"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@ast-grep/napi-darwin-x64@npm:0.37.0":
+  version: 0.37.0
+  resolution: "@ast-grep/napi-darwin-x64@npm:0.37.0"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@ast-grep/napi-linux-arm64-gnu@npm:0.37.0":
+  version: 0.37.0
+  resolution: "@ast-grep/napi-linux-arm64-gnu@npm:0.37.0"
+  conditions: os=linux & cpu=arm64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@ast-grep/napi-linux-arm64-musl@npm:0.37.0":
+  version: 0.37.0
+  resolution: "@ast-grep/napi-linux-arm64-musl@npm:0.37.0"
+  conditions: os=linux & cpu=arm64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@ast-grep/napi-linux-x64-gnu@npm:0.37.0":
+  version: 0.37.0
+  resolution: "@ast-grep/napi-linux-x64-gnu@npm:0.37.0"
+  conditions: os=linux & cpu=x64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@ast-grep/napi-linux-x64-musl@npm:0.37.0":
+  version: 0.37.0
+  resolution: "@ast-grep/napi-linux-x64-musl@npm:0.37.0"
+  conditions: os=linux & cpu=x64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@ast-grep/napi-win32-arm64-msvc@npm:0.37.0":
+  version: 0.37.0
+  resolution: "@ast-grep/napi-win32-arm64-msvc@npm:0.37.0"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@ast-grep/napi-win32-ia32-msvc@npm:0.37.0":
+  version: 0.37.0
+  resolution: "@ast-grep/napi-win32-ia32-msvc@npm:0.37.0"
+  conditions: os=win32 & cpu=ia32
+  languageName: node
+  linkType: hard
+
+"@ast-grep/napi-win32-x64-msvc@npm:0.37.0":
+  version: 0.37.0
+  resolution: "@ast-grep/napi-win32-x64-msvc@npm:0.37.0"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@ast-grep/napi@npm:0.37.0":
+  version: 0.37.0
+  resolution: "@ast-grep/napi@npm:0.37.0"
+  dependencies:
+    "@ast-grep/napi-darwin-arm64": "npm:0.37.0"
+    "@ast-grep/napi-darwin-x64": "npm:0.37.0"
+    "@ast-grep/napi-linux-arm64-gnu": "npm:0.37.0"
+    "@ast-grep/napi-linux-arm64-musl": "npm:0.37.0"
+    "@ast-grep/napi-linux-x64-gnu": "npm:0.37.0"
+    "@ast-grep/napi-linux-x64-musl": "npm:0.37.0"
+    "@ast-grep/napi-win32-arm64-msvc": "npm:0.37.0"
+    "@ast-grep/napi-win32-ia32-msvc": "npm:0.37.0"
+    "@ast-grep/napi-win32-x64-msvc": "npm:0.37.0"
+  dependenciesMeta:
+    "@ast-grep/napi-darwin-arm64":
+      optional: true
+    "@ast-grep/napi-darwin-x64":
+      optional: true
+    "@ast-grep/napi-linux-arm64-gnu":
+      optional: true
+    "@ast-grep/napi-linux-arm64-musl":
+      optional: true
+    "@ast-grep/napi-linux-x64-gnu":
+      optional: true
+    "@ast-grep/napi-linux-x64-musl":
+      optional: true
+    "@ast-grep/napi-win32-arm64-msvc":
+      optional: true
+    "@ast-grep/napi-win32-ia32-msvc":
+      optional: true
+    "@ast-grep/napi-win32-x64-msvc":
+      optional: true
+  checksum: 10c0/9038ca27e64a83268ed6b23a6e860ee51c4cf5e1d72a6bd0b9130a33730240ecc5bf1035260d29443b488e53fb9c941eabea7e7953e11919e357454a9c8ce6c7
+  languageName: node
+  linkType: hard
 
 "@babel/code-frame@npm:^7.28.6, @babel/code-frame@npm:^7.29.0":
   version: 7.29.0
@@ -506,7 +617,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rsbuild/core@npm:^1, @rsbuild/core@npm:^1.7.3":
+"@rsbuild/core@npm:^1, @rsbuild/core@npm:^1.7.3, @rsbuild/core@npm:~1.7.3":
   version: 1.7.3
   resolution: "@rsbuild/core@npm:1.7.3"
   dependencies:
@@ -546,6 +657,26 @@ __metadata:
     "@rsbuild/core":
       optional: true
   checksum: 10c0/ec87078944dfcceeff00a9938bc3d681f06c4c62f78f32da36a2c62a936b9bba2d31f24856e615ce37eabac026b66441323755764c7b00485741b2965970c07c
+  languageName: node
+  linkType: hard
+
+"@rslib/core@npm:^0.19":
+  version: 0.19.5
+  resolution: "@rslib/core@npm:0.19.5"
+  dependencies:
+    "@rsbuild/core": "npm:~1.7.3"
+    rsbuild-plugin-dts: "npm:0.19.5"
+  peerDependencies:
+    "@microsoft/api-extractor": ^7
+    typescript: ^5
+  peerDependenciesMeta:
+    "@microsoft/api-extractor":
+      optional: true
+    typescript:
+      optional: true
+  bin:
+    rslib: bin/rslib.js
+  checksum: 10c0/4ed5f2da2d540549a4157e7445d6b9c402eb6f7529c851bb695e6d86989acd3b5fe81cc9e5558415113b4486da696823036f1cb968baa93a3f3f26ac092fe499
   languageName: node
   linkType: hard
 
@@ -1850,6 +1981,27 @@ __metadata:
     prettier: "catalog:"
   languageName: unknown
   linkType: soft
+
+"rsbuild-plugin-dts@npm:0.19.5":
+  version: 0.19.5
+  resolution: "rsbuild-plugin-dts@npm:0.19.5"
+  dependencies:
+    "@ast-grep/napi": "npm:0.37.0"
+  peerDependencies:
+    "@microsoft/api-extractor": ^7
+    "@rsbuild/core": 1.x
+    "@typescript/native-preview": 7.x
+    typescript: ^5
+  peerDependenciesMeta:
+    "@microsoft/api-extractor":
+      optional: true
+    "@typescript/native-preview":
+      optional: true
+    typescript:
+      optional: true
+  checksum: 10c0/5e1104e73a4f7e0424dc43d0572a5e8d76a36c8e7d1c4a271c0e91e4bf06d437b496460c450efe8ecb63d602607d70c4846e362ac6428871ed966689fcc3f256
+  languageName: node
+  linkType: hard
 
 "run-parallel@npm:^1.1.9":
   version: 1.2.0
