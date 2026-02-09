@@ -1,0 +1,21 @@
+{
+  "name": "&eslint-config",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "files": [
+    "./eslint.config.mjs"
+  ],
+  "exports": {
+    ".": "./eslint.config.mjs"
+  },
+  "dependencies": {
+    "@eslint/js": "catalog:",
+    "eslint": "catalog:",
+    "eslint-plugin-react-hooks": "catalog:",
+    "eslint-plugin-react-refresh": "catalog:",
+    "globals": "catalog:",
+    "typescript": "catalog:",
+    "typescript-eslint": "catalog:"
+  }
+}
