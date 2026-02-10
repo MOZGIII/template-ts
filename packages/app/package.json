@@ -1,12 +1,12 @@
 {
-  "name": "&example-spa",
+  "name": "&app",
   "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "rsbuild build",
     "dev": "rsbuild dev --open",
-    "example-spa:dev": "yarn dev",
+    "app:dev": "yarn dev",
     "preview": "rsbuild preview",
     "test": "rstest",
     "eslint:fix": "eslint . --fix",

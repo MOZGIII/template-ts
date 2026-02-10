@@ -5,6 +5,25 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
+"&app@workspace:packages/app":
+  version: 0.0.0-use.local
+  resolution: "&app@workspace:packages/app"
+  dependencies:
+    "&eslint-config": "workspace:"
+    "&example-lib": "workspace:"
+    "@rsbuild/core": "catalog:"
+    "@rsbuild/plugin-react": "catalog:"
+    "@rsbuild/plugin-source-build": "catalog:"
+    "@rstest/core": "catalog:"
+    "@types/react": "catalog:"
+    "@types/react-dom": "catalog:"
+    eslint: "catalog:"
+    react: "catalog:"
+    react-dom: "catalog:"
+    typescript: "catalog:"
+  languageName: unknown
+  linkType: soft
+
 "&eslint-config@workspace:, &eslint-config@workspace:packages/eslint-config":
   version: 0.0.0-use.local
   resolution: "&eslint-config@workspace:packages/eslint-config"
@@ -39,25 +58,6 @@ __metadata:
     "@rslib/core": "catalog:"
     "@rstest/core": "catalog:"
     eslint: "catalog:"
-    typescript: "catalog:"
-  languageName: unknown
-  linkType: soft
-
-"&example-spa@workspace:packages/example-spa":
-  version: 0.0.0-use.local
-  resolution: "&example-spa@workspace:packages/example-spa"
-  dependencies:
-    "&eslint-config": "workspace:"
-    "&example-lib": "workspace:"
-    "@rsbuild/core": "catalog:"
-    "@rsbuild/plugin-react": "catalog:"
-    "@rsbuild/plugin-source-build": "catalog:"
-    "@rstest/core": "catalog:"
-    "@types/react": "catalog:"
-    "@types/react-dom": "catalog:"
-    eslint: "catalog:"
-    react: "catalog:"
-    react-dom: "catalog:"
     typescript: "catalog:"
   languageName: unknown
   linkType: soft

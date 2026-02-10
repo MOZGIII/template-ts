@@ -1,7 +1,7 @@
 variable "TARGETS" {
   type = map(string)
   default = {
-    "example-spa" = "spa"
+    "app" = "spa"
   }
 }
 
