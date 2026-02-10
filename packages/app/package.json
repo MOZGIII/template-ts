@@ -11,7 +11,7 @@
     "test": "rstest",
     "eslint:fix": "eslint . --fix",
     "eslint:check": "eslint .",
-    "tsc:check": "tsc --build --noEmit"
+    "tsc:check": "tsc --build --force"
   },
   "dependencies": {
     "&ui-lib": "workspace:",

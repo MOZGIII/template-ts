@@ -1,9 +1,6 @@
 {
-  "extends": ["./tsconfig.base.json"],
+  "extends": ["./tsconfig.lib.json"],
   "compilerOptions": {
-    "declaration": true,
-    "sourceMap": true,
-    "declarationMap": true,
-    "noEmit": false
+    "rootDir": "${configDir}/tests"
   }
 }

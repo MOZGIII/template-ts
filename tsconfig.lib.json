@@ -5,9 +5,6 @@
     "rootDir": "${configDir}/src",
     "declaration": true,
     "sourceMap": true,
-    "declarationMap": true,
-    "noEmit": false,
-    "emitDeclarationOnly": false,
-    "isolatedModules": true
+    "declarationMap": true
   }
 }

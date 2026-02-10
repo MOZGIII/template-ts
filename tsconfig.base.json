@@ -3,7 +3,6 @@
     "lib": ["DOM", "ES2020"],
     "jsx": "react-jsx",
     "target": "ES2020",
-    "emitDeclarationOnly": true,
     "skipLibCheck": true,
     "useDefineForClassFields": true,
 
@@ -27,6 +26,7 @@
     "incremental": true,
     "customConditions": ["source"],
     "outDir": "${configDir}/.cache",
-    "noEmit": true
+    "noEmit": false,
+    "emitDeclarationOnly": true
   }
 }

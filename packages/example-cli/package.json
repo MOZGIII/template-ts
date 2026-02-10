@@ -9,7 +9,7 @@
     "example-cli:dev": "yarn dev",
     "eslint:fix": "eslint . --fix",
     "eslint:check": "eslint .",
-    "tsc:check": "tsc --build --noEmit"
+    "tsc:check": "tsc --build --force"
   },
   "dependencies": {
     "&core-lib": "workspace:"
