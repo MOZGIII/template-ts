@@ -2,7 +2,6 @@ variable "TARGETS" {
   type = map(string)
   default = {
     "example-spa" = "spa"
-    "example-cli" = "node"
   }
 }
 
@@ -15,13 +14,17 @@ target "base" {
   # ssh = ["default"]
 }
 
+target "spa" {
+  inherits = ["base"]
+  target = "spa-runtime"
+}
+
 target "main" {
   matrix = {
     key = keys(TARGETS)
   }
   name = key
-  inherits = ["base", "docker-metadata-action-${key}"]
-  target = TARGETS[key]
+  inherits = [TARGETS[key], "docker-metadata-action-${key}"]
   args = {
     PACKAGE = key
   }
