@@ -9,8 +9,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "&app@workspace:packages/app"
   dependencies:
+    "&core-lib": "workspace:"
     "&eslint-config": "workspace:"
-    "&example-lib": "workspace:"
     "@rsbuild/core": "catalog:"
     "@rsbuild/plugin-react": "catalog:"
     "@rsbuild/plugin-source-build": "catalog:"
@@ -20,6 +20,19 @@ __metadata:
     eslint: "catalog:"
     react: "catalog:"
     react-dom: "catalog:"
+    typescript: "catalog:"
+  languageName: unknown
+  linkType: soft
+
+"&core-lib@workspace:, &core-lib@workspace:packages/core-lib":
+  version: 0.0.0-use.local
+  resolution: "&core-lib@workspace:packages/core-lib"
+  dependencies:
+    "&eslint-config": "workspace:"
+    "@rsbuild/plugin-source-build": "catalog:"
+    "@rslib/core": "catalog:"
+    "@rstest/core": "catalog:"
+    eslint: "catalog:"
     typescript: "catalog:"
   languageName: unknown
   linkType: soft
@@ -42,21 +55,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "&example-cli@workspace:packages/example-cli"
   dependencies:
+    "&core-lib": "workspace:"
     "&eslint-config": "workspace:"
-    "&example-lib": "workspace:"
-    eslint: "catalog:"
-    typescript: "catalog:"
-  languageName: unknown
-  linkType: soft
-
-"&example-lib@workspace:, &example-lib@workspace:packages/example-lib":
-  version: 0.0.0-use.local
-  resolution: "&example-lib@workspace:packages/example-lib"
-  dependencies:
-    "&eslint-config": "workspace:"
-    "@rsbuild/plugin-source-build": "catalog:"
-    "@rslib/core": "catalog:"
-    "@rstest/core": "catalog:"
     eslint: "catalog:"
     typescript: "catalog:"
   languageName: unknown

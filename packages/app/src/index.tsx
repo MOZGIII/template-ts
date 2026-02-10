@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import helloWorld from "&example-lib";
+import helloWorld from "&core-lib";
 
 const rootEl = document.getElementById("root");
 if (rootEl === null) {

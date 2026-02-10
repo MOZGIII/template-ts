@@ -1,5 +1,5 @@
 {
-  "name": "&example-lib",
+  "name": "&core-lib",
   "version": "1.0.0",
   "private": true,
   "type": "module",

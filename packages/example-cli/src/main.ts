@@ -1,3 +1,3 @@
-import helloWorld from "&example-lib";
+import helloWorld from "&core-lib";
 
 console.log(helloWorld);
