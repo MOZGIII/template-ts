@@ -11,7 +11,8 @@
     "prettier:check": "prettier -l .",
     "eslint:fix": "yarn workspaces foreach -At run eslint:fix",
     "eslint:check": "yarn workspaces foreach -At run eslint:check",
-    "tsc:check": "yarn workspaces foreach -At run tsc:check",
+    "tsc:check": "tsc --build --force",
+    "tsc:check:packages": "yarn workspaces foreach -At run tsc:check",
     "dedupe:fix": "yarn dedupe",
     "dedupe:check": "yarn dedupe --check"
   },

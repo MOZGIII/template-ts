@@ -1,0 +1,8 @@
+{
+  "extends": ["./tsconfig.base.json"],
+  "compilerOptions": {
+    "tsBuildInfoFile": "${configDir}/.cache/ts-build-info/dev.tsbuildInfo",
+    "outDir": "${configDir}/.cache/dev",
+    "rootDir": "${configDir}"
+  }
+}

@@ -25,7 +25,8 @@
     "composite": true,
     "incremental": true,
     "customConditions": ["source"],
-    "outDir": "${configDir}/.cache",
+    "outDir": "${configDir}/.cache/base",
+    "tsBuildInfoFile": "${configDir}/.cache/ts-build-info/base.tsbuildInfo",
     "noEmit": false,
     "emitDeclarationOnly": true
   }

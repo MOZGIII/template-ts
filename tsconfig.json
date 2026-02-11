@@ -1,0 +1,9 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/core-lib/tsconfig.all.json" },
+    { "path": "./packages/ui-lib/tsconfig.all.json" },
+    { "path": "./packages/app/tsconfig.all.json" },
+    { "path": "./packages/tools-cli/tsconfig.all.json" }
+  ]
+}

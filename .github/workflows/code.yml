@@ -25,6 +25,8 @@ jobs:
 
           - command: tsc:check
 
+          - command: tsc:check:packages
+
           - command: dedupe:check
 
           - command: test

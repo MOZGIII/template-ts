@@ -1,5 +1,5 @@
 {
-  "extends": ["../../tsconfig.spa.json"],
+  "extends": ["../../tsconfig/tsconfig.spa.json"],
   "include": ["src"],
   "references": [{ "path": "../ui-lib" }]
 }
